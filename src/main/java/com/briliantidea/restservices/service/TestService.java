@@ -10,4 +10,8 @@ public class TestService {
 
        return "Hello" + " " + inpUser.getName() + " " + inpUser.getFamily() + ". You are " + inpUser.getAge().toString();
     }
+
+    public Boolean authenticateUser(user inpUser){
+        return Boolean.TRUE;
+    }
 }

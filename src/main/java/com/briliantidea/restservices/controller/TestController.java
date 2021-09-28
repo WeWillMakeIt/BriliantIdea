@@ -21,4 +21,9 @@ public class TestController {
 
         return testService.getUserWelcomeSentense(inpUres);
     }
+
+    @RequestMapping(value = "/loginrequest", method = RequestMethod.POST)
+    public Boolean authenticateUser(@RequestBody user inpUser){
+        return  testService.authenticateUser(inpUser);
+    }
 }
