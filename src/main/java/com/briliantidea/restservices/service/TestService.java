@@ -1,17 +1,19 @@
 package com.briliantidea.restservices.service;
 
 import com.briliantidea.restservices.model.user;
+import com.briliantidea.restservices.model.apiResponse;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TestService {
 
-    public String getUserWelcomeSentense(user inpUser){
+    public apiResponse getUserWelcomeSentense(user inpUser, String Username, String Password) {
 
-       return "Hello" + " " + inpUser.getName() + " " + inpUser.getFamily() + ". You are " + inpUser.getAge().toString();
+        apiResponse response = new apiResponse();
+        response.setResponseCode(0);
+        response.setResponseMessage("Successful Execution");
+
+        return response;
     }
 
-    public Boolean authenticateUser(user inpUser){
-        return Boolean.TRUE;
-    }
 }
