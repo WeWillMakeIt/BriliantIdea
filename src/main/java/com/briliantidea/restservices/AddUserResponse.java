@@ -1,6 +1,6 @@
-package com.briliantidea.restservices.model;
+package com.briliantidea.restservices;
 
-public class apiResponse {
+public class AddUserResponse {
     private Integer responseCode;
     private String responseMessage;
 
